@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banana-stg-api
+  namespace: banana
+  labels:
+    app: banana-stg-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banana-stg-api
+  template:
+    metadata:
+      labels:
+        app: banana-stg-api
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+        - name: banana-stg-web
+          imagePullPolicy: Always
+          image: registry.thecodeworkers.com/banana-api:latest-test
+          ports:
+            - name: http-port
+              containerPort: 1337

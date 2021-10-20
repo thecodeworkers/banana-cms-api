@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  banana-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: banana-api
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - /usr/src/app/node_modules
+      - ./:/usr/src/app
+    ports:
+      - '1337:1337'
+    command: yarn develop

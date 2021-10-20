@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "name": "Formularios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Datos": {
+      "type": "dynamiczone",
+      "components": [
+        "form-elements.input",
+        "form-elements.select"
+      ]
+    }
+  }
+}

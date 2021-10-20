@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: banana-stg-api-service
+  namespace: banana
+  labels:
+    app: banana-stg-api
+spec:
+  ports:
+    - name: banana-stg-api
+      port: 1337
+  selector:
+    app: banana-stg-api

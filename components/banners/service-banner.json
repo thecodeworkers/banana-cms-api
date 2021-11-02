@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_banners_service_banners",
+  "info": {
+    "name": "ServiceBanner",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "dark": {
+      "type": "boolean"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.services-list"
+    }
+  }
+}

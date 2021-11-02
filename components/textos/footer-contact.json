@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_textos_footer_contacts",
+  "info": {
+    "name": "FooterContact",
+    "icon": "arrow-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.datos-de-contacto"
+    }
+  }
+}

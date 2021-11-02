@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_textos_services",
+  "info": {
+    "name": "services",
+    "icon": "arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_banners_clients_banners",
+  "info": {
+    "name": "ClientsBanner",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Clients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.logos"
+    }
+  }
+}

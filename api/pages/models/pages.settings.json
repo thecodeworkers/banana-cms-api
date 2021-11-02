@@ -24,7 +24,16 @@
         "botoneria.boton",
         "textos.text",
         "banners.banner",
-        "sliders.slider"
+        "sliders.slider",
+        "textos.hero",
+        "textos.datos-de-contacto",
+        "banners.second-banner",
+        "banners.service-banner",
+        "banners.third-banner",
+        "banners.contact-banner",
+        "banners.videos-banner",
+        "banners.testimonial-banner",
+        "banners.clients-banner"
       ]
     }
   }

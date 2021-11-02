@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_banners_third_banners",
+  "info": {
+    "name": "ThirdBanner",
+    "icon": "ankh",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phrase": {
+      "type": "string"
+    },
+    "ThirdBannerWords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.third-banner-words"
+    }
+  }
+}

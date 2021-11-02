@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_textos_branches",
+  "info": {
+    "name": "branch",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

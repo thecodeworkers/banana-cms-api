@@ -1,12 +1,20 @@
 {
-  "collectionName": "components_banners_banners",
+  "collectionName": "components_sliders_tesmimonial_data",
   "info": {
-    "name": "Banner",
-    "icon": "file-image",
-    "description": ""
+    "name": "TesmimonialData",
+    "icon": "allergies"
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "testimony": {
+      "type": "string"
+    },
     "image": {
       "model": "file",
       "via": "related",
@@ -19,7 +27,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "imageResponsive": {
+    "responsiveImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,18 +38,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "position": {
-      "type": "integer"
-    },
-    "fullWidth": {
-      "type": "boolean"
-    },
-    "button": {
-      "type": "boolean"
-    },
-    "textButton": {
-      "type": "string"
     }
   }
 }

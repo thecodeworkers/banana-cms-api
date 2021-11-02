@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_banners_second_banners",
+  "info": {
+    "name": "secondBanner",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phrase": {
+      "type": "string"
+    },
+    "sectionButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    },
+    "branchs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.branch"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sliders_logos",
+  "info": {
+    "name": "Logos",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

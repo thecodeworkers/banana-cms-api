@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_textos_videos",
+  "info": {
+    "name": "Videos",
+    "icon": "laptop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

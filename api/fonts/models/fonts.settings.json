@@ -24,7 +24,31 @@
       "required": false,
       "pluginOptions": {}
     },
-    "italic": {
+    "bold": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "light": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "medium": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

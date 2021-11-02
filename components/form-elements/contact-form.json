@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_form_elements_contact_forms",
+  "info": {
+    "name": "contactForm",
+    "icon": "feather",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "input": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-elements.input"
+    }
+  }
+}

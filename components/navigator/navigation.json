@@ -12,9 +12,6 @@
     "name": {
       "type": "string"
     },
-    "page": {
-      "model": "pages"
-    },
     "subNav": {
       "type": "component",
       "repeatable": true,

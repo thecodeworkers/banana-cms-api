@@ -1,0 +1,140 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "Pagina Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "textos.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Secondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "SecondBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.second-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "serviceBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.service-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "SecondServiceBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.service-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ThirdBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.third-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ContactBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.contact-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "VideoBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.videos-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "LastBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.testimonial-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Clients": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.clients-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

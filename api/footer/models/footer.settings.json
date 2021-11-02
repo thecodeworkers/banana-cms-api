@@ -10,25 +10,49 @@
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "copyright": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "social": {
       "type": "component",
       "repeatable": true,
-      "component": "navigator.social"
+      "component": "navigator.social",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sections": {
       "type": "component",
       "repeatable": true,
-      "component": "navigator.sections"
+      "component": "navigator.sections",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "FooterContact": {
       "type": "component",
       "repeatable": false,
-      "component": "textos.footer-contact"
+      "component": "textos.footer-contact",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

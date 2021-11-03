@@ -36,6 +36,12 @@
     },
     "fullWidth": {
       "type": "boolean"
+    },
+    "button": {
+      "type": "boolean"
+    },
+    "textButton": {
+      "type": "string"
     }
   }
 }

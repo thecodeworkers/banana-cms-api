@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_banners_testimonial_banners",
+  "info": {
+    "name": "TestimonialBanner",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "TesmimonialData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.tesmimonial-data"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    }
+  }
+}

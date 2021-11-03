@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sliders_clients_logos",
+  "info": {
+    "name": "ClientsLogo",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "Logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.logos"
+    }
+  }
+}

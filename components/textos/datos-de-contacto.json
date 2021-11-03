@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_textos_datos_de_contactos",
+  "info": {
+    "name": "contactData",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "phoneOne": {
+      "type": "string"
+    },
+    "phoneTwo": {
+      "type": "string"
+    },
+    "socialAccount": {
+      "type": "string"
+    },
+    "titleNumbers": {
+      "type": "string"
+    },
+    "titleSocial": {
+      "type": "string"
+    },
+    "titleEmail": {
+      "type": "string"
+    }
+  }
+}

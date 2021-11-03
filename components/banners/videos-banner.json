@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_banners_videos_banners",
+  "info": {
+    "name": "VideosBanner",
+    "icon": "film",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Videos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.videos"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

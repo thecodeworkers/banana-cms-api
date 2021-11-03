@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_textos_third_banner_words",
+  "info": {
+    "name": "ThirdBannerWords",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string"
+    }
+  }
+}

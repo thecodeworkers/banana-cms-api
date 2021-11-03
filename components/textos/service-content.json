@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_textos_service_contents",
+  "info": {
+    "name": "ServiceContent",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "serviceTitle": {
+      "type": "string"
+    },
+    "servicesList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.services-list"
+    }
+  }
+}

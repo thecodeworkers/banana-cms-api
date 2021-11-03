@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_textos_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phrase": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "recapButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "botoneria.boton"
+    },
+    "sectionButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    }
+  }
+}

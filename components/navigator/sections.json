@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_navigator_sections",
+  "info": {
+    "name": "sections",
+    "icon": "band-aid"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    }
+  }
+}

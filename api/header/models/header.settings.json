@@ -10,7 +10,11 @@
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "logo": {
       "model": "file",
@@ -22,17 +26,31 @@
       ],
       "plugin": "upload",
       "required": false,
-      "pluginOptions": {}
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "navigation": {
       "type": "component",
       "repeatable": true,
-      "component": "navigator.navigation"
+      "component": "navigator.navigation",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "social": {
       "type": "component",
       "repeatable": true,
-      "component": "navigator.social"
+      "component": "navigator.social",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

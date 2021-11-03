@@ -36,16 +36,6 @@
         }
       }
     },
-    "Secondary": {
-      "type": "component",
-      "repeatable": false,
-      "component": "banners.banner",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "SecondBanner": {
       "type": "component",
       "repeatable": false,
@@ -58,17 +48,7 @@
     },
     "serviceBanner": {
       "type": "component",
-      "repeatable": false,
-      "component": "banners.service-banner",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "SecondServiceBanner": {
-      "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "banners.service-banner",
       "pluginOptions": {
         "i18n": {
@@ -106,16 +86,6 @@
         }
       }
     },
-    "LastBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "banners.banner",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "Testimonials": {
       "type": "component",
       "repeatable": false,
@@ -135,6 +105,26 @@
           "localized": true
         }
       }
+    },
+    "ClasroomBanner": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "banners.banner"
+    },
+    "GifBanner": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "banners.banner"
     }
   }
 }

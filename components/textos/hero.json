@@ -7,13 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "frase": {
+    "phrase": {
       "type": "string"
     },
-    "fecha": {
+    "date": {
       "type": "string"
     },
-    "parrafo": {
+    "paragraph": {
       "type": "text"
     },
     "recapButton": {

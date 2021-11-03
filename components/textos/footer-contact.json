@@ -2,13 +2,11 @@
   "collectionName": "components_textos_footer_contacts",
   "info": {
     "name": "FooterContact",
-    "icon": "arrow-left"
+    "icon": "arrow-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "Contact": {
       "type": "component",
       "repeatable": true,

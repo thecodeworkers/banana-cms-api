@@ -25,6 +25,9 @@
       "type": "component",
       "repeatable": false,
       "component": "botoneria.boton"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

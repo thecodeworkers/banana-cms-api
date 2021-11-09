@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_banners_team_galleries",
+  "info": {
+    "name": "TeamGallery",
+    "icon": "user-alt"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

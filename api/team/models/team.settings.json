@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "aboutHero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "textos.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "TeamGallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.team-gallery",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

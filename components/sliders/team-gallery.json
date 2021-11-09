@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_sliders_team_galleries",
+  "info": {
+    "name": "TeamGallery",
+    "icon": "smile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "socialMedia": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "socialLink": {
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isImage": {
+      "type": "boolean"
+    }
+  }
+}

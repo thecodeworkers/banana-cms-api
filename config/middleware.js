@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ env }) => ({
   load: {
     before: ['responseTime', 'boom', 'logger', 'cors', 'responses', 'gzip'],
     after: ['parser', 'router'],
@@ -13,8 +13,8 @@ module.exports = {
     cors: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:3000', 'http://localhost']
+      origin: ['http://localhost:3000', 'http://localhost', env('URL', 'http://localhost:1337')]
     },
   }
-}
+})
 // 'http://192.168.1.53:3000'

@@ -9,7 +9,11 @@ module.exports = {
       options: {
         br: false
       }
+    },
+    cors: {
+      enabled: true,
+      origin: ['*']
     }
   }
-};
+}
 

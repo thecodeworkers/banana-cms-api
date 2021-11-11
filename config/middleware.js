@@ -13,8 +13,7 @@ module.exports = ({ env }) => ({
     cors: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:3000', 'http://localhost', env('URL', 'http://localhost:1337')]
+      origin: env('CORS_ORIGIN', 'http://localhost:1337,http://localhost:3000,http://localhost:1337,http://localhost:8000').split(',')
     },
   }
 })
-// 'http://192.168.1.53:3000'

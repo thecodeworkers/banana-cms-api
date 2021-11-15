@@ -9,6 +9,24 @@
   "attributes": {
     "url": {
       "type": "string"
+    },
+    "videoImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoDescription": {
+      "type": "string"
+    },
+    "videoAction": {
+      "type": "string"
     }
   }
 }

@@ -12,7 +12,8 @@ module.exports = ({ env }) => ({
     },
     cors: {
       enabled: false,
-      origin: ['http://localhost:3000', 'http://localhost', env('URL', 'http://localhost:1337')]
+      headers: '*',
+      origin: ['http://localhost:3000', 'http://localhost', env('URL', 'http://localhost:1337')],
     },
   }
 })

@@ -11,7 +11,8 @@ module.exports = ({ env }) => ({
       }
     },
     cors: {
-      origin: [ 'http://localhost', 'https://banana-dev-web.thecodeworkers.com/', env('URL', 'http://localhost:1337') ]
+      origin: [ 'http://localhost', 'https://banana-dev-web.thecodeworkers.com/', env('URL', 'http://localhost:1337') ],
+      headers: ['*']
     },
   }
 })

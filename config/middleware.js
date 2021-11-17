@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
       }
     },
     cors: {
-      enabled: false,
+      enabled: true,
       origin: ['http://localhost', 'http://localhost:3000', env('URL', 'http://localhost:1337'), 'https://banana-dev-web.thecodeworkers.com/'],
       expose: ['WWW-Authenticate', 'Server-Authorization', 'Access-Control-Expose-Headers'],
       credentials: false,

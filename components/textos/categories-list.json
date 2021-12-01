@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_textos_categories_lists",
+  "info": {
+    "name": "categories_list",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

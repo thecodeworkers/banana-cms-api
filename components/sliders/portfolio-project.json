@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sliders_portfolio_projects",
+  "info": {
+    "name": "portfolio_project",
+    "icon": "baseball-ball"
+  },
+  "options": {},
+  "attributes": {
+    "portfolioData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.portfolio-data"
+    }
+  }
+}

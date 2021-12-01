@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "individual_projects",
+  "info": {
+    "name": "Individual Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "individualData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sliders.individual-data"
+    }
+  }
+}

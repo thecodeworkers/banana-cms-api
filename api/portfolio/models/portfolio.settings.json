@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "Portfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Categories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "textos.categories"
+    },
+    "covers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sliders.portfolio-project"
+    }
+  }
+}

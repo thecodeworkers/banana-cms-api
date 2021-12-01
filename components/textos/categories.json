@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_textos_categories",
+  "info": {
+    "name": "Categories",
+    "icon": "chess-rook",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categories_list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "textos.categories-list"
+    }
+  }
+}

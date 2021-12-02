@@ -14,13 +14,8 @@
   "attributes": {
     "Categories": {
       "type": "component",
-      "repeatable": false,
-      "component": "textos.categories"
-    },
-    "covers": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sliders.portfolio-project"
+      "repeatable": true,
+      "component": "textos.categories-list"
     }
   }
 }

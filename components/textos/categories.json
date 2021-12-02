@@ -6,11 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "categories_list": {
-      "type": "component",
-      "repeatable": true,
-      "component": "textos.categories-list"
-    }
-  }
+  "attributes": {}
 }

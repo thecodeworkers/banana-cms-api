@@ -10,35 +10,69 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "portrait": {
       "type": "component",
       "repeatable": false,
-      "component": "banners.portrait"
+      "component": "banners.portrait",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "logoHover": {
       "type": "component",
       "repeatable": false,
-      "component": "banners.portrait"
+      "component": "banners.portrait",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "year": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "categories": {
-      "model": "categories",
-      "via": "proyectos"
+      "via": "proyectos",
+      "model": "categories"
     },
     "gallery": {
       "type": "component",
       "repeatable": false,
-      "component": "banners.gallery"
+      "component": "banners.gallery",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

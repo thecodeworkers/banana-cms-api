@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_banners_galleries",
+  "info": {
+    "name": "Gallery",
+    "icon": "battery-three-quarters"
+  },
+  "options": {},
+  "attributes": {
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "galleryResponsive": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

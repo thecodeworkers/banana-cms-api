@@ -12,17 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "photos": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "portrait": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.portrait"
+    },
+    "logoHover": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.portrait"
     },
     "name": {
       "type": "string"
@@ -32,6 +30,15 @@
     },
     "description": {
       "type": "text"
+    },
+    "categories": {
+      "model": "categories",
+      "via": "proyectos"
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.gallery"
     }
   }
 }

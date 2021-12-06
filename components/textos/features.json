@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_textos_features",
+  "info": {
+    "name": "features",
+    "icon": "beer"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

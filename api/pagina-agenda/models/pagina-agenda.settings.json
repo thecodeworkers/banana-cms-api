@@ -10,22 +10,51 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "scheduleFirstBanner": {
       "type": "component",
       "repeatable": false,
-      "component": "banners.schedule-first-banner"
+      "component": "banners.schedule-first-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "scheduleSecondBanner": {
       "type": "component",
       "repeatable": false,
-      "component": "banners.schedule-second-banner"
+      "component": "banners.schedule-second-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Product": {
       "type": "component",
       "repeatable": true,
-      "component": "banners.products"
+      "component": "banners.products",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "fourthBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.fourth-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pagina-agenda",
+      "handler": "pagina-agenda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pagina-agenda",
+      "handler": "pagina-agenda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pagina-agenda",
+      "handler": "pagina-agenda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

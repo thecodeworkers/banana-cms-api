@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_banners_schedule_first_banners",
+  "info": {
+    "name": "scheduleFirstBanner",
+    "icon": "battery-empty"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "backgroundResponsive": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ButtonAgenda": {
+      "type": "component",
+      "repeatable": false,
+      "component": "botoneria.boton"
+    }
+  }
+}

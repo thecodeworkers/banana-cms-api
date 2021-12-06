@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_agenda",
+  "info": {
+    "name": "Pagina Agenda",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "scheduleFirstBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.schedule-first-banner"
+    },
+    "scheduleSecondBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.schedule-second-banner"
+    },
+    "Product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banners.products"
+    }
+  }
+}

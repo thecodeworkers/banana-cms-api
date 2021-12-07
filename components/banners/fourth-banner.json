@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_banners_fourth_banners",
+  "info": {
+    "name": "fourthBanner",
+    "icon": "battery-half",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "gifBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "gifBannerResponsive": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigator.social"
+    }
+  }
+}

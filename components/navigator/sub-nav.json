@@ -2,12 +2,16 @@
   "collectionName": "components_navigator_sub_navs",
   "info": {
     "name": "SubNav",
-    "icon": "align-right"
+    "icon": "align-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "position": {
       "type": "integer"
+    },
+    "link": {
+      "type": "string"
     },
     "name": {
       "type": "string"

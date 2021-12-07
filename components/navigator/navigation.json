@@ -2,17 +2,12 @@
   "collectionName": "components_navigator_navigations",
   "info": {
     "name": "Navigation",
-    "icon": "grip-horizontal"
+    "icon": "grip-horizontal",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "position": {
-      "type": "integer"
-    },
-    "name": {
-      "type": "string"
-    },
-    "subNav": {
+    "route": {
       "type": "component",
       "repeatable": true,
       "component": "navigator.sub-nav"

@@ -21,10 +21,23 @@
       "repeatable": false,
       "component": "botoneria.boton"
     },
+    "nextButton": {
+      "type": "string"
+    },
+    "secondButton": {
+      "type": "string"
+    },
+    "thirdButton": {
+      "type": "string"
+    },
+    "sucessMessage": {
+      "type": "string"
+    },
     "contactForm": {
       "type": "component",
       "repeatable": true,
       "component": "form-elements.contact-form"
     }
+
   }
 }

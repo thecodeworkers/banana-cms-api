@@ -16,41 +16,15 @@
     }
   },
   "attributes": {
-    "logo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "navigation": {
+    "navigations": {
       "type": "component",
-      "repeatable": true,
-      "component": "navigator.navigation",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "social": {
-      "type": "component",
-      "repeatable": true,
-      "component": "navigator.social",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      },
+      "component": "navigator.navigation"
     }
   }
 }

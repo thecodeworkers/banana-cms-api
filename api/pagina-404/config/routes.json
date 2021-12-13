@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pagina-404",
+      "handler": "pagina-404.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pagina-404",
+      "handler": "pagina-404.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pagina-404",
+      "handler": "pagina-404.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

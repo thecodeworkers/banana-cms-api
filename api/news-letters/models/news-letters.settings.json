@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_letters",
+  "info": {
+    "name": "NewsLetters"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    }
+  }
+}

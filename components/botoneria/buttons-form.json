@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_botoneria_buttons_forms",
+  "info": {
+    "name": "buttonsForm",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "nextButton": {
+      "type": "string"
+    },
+    "secondButton": {
+      "type": "string"
+    },
+    "sucessMessage": {
+      "type": "string"
+    }
+  }
+}

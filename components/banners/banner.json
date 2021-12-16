@@ -42,6 +42,9 @@
     },
     "textButton": {
       "type": "string"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

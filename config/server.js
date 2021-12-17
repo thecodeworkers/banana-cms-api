@@ -5,7 +5,8 @@ module.exports = ({ env }) => ({
     auth: {
       secret: env('ADMIN_JWT_SECRET', '69dc992d3a0cdc3e3557fc313470dc9d'),
     },
-    autoOpen: false
+    autoOpen: false,
+    watchIgnoreFiles: ["**/private/**"],
   },
   url: env('URL', 'http://localhost:1337'),
 })

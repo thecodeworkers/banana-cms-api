@@ -27,8 +27,22 @@ spec:
                 name: banana-stg-api-service
                 port:
                   number: 1337
+    - host: admin.bananacreative.io
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: banana-creative-api-service
+                port:
+                  number: 1337
   tls:
     - hosts:
       - banana-stg-api.thecodeworkers.com
       secretName: banana-stg-api-thecodeworkers-com-tls
+    - hosts:
+      - admin.bananacreative.io
+      secretName: banana-creative-api-thecodeworkers-com-tls
+
 

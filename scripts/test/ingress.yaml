@@ -34,7 +34,7 @@ spec:
             path: /
             backend:
               service:
-                name: banana-creative-api-service
+                name: banana-stg-api-service
                 port:
                   number: 1337
   tls:

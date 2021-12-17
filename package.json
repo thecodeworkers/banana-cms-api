@@ -15,6 +15,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "knex": "0.21.18",
+    "mysql": "^2.18.1",
     "react-color": "^2.19.3",
     "sqlite3": "5.0.0",
     "strapi": "3.6.8",
@@ -25,6 +26,7 @@
     "strapi-plugin-email": "3.6.8",
     "strapi-plugin-graphql": "^3.6.8",
     "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-import-export-content": "^0.4.2",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
     "strapi-utils": "3.6.8"

@@ -34,7 +34,7 @@ pipeline {
           }
         }
         steps {
-          sh "echo URL=https://banana-$DEPLOY_TO-api.thecodeworkers.com >> .env"
+          sh "echo URL=https://banana-$DOMAIN_TO-api.thecodeworkers.com >> .env"
           script {
             docker.withRegistry(registry, registryCredential ) {
               docker.build("banana-api:$BUILD_NUMBER", '-f Dockerfile.test ./').push()

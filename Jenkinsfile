@@ -5,6 +5,7 @@ pipeline {
       registryCredential = 'DockerRegistry'
       dockerImage = ''
       API_TOKEN = credentials('kubernetesSecret')
+      DATABASE_PASSWORD = credentials('MYSQLPASSWORD')
     }
     agent any
 
@@ -29,12 +30,16 @@ pipeline {
       stage('Docker Build') {
         when {
           anyOf {
-            expression {env.GIT_BRANCH == 'origin/test'}
-            expression {env.GIT_BRANCH == 'origin/dev'}
+            expression { env.GIT_BRANCH == 'origin/test' }
+            expression { env.GIT_BRANCH == 'origin/dev' }
           }
         }
         steps {
           sh "echo URL=https://banana-$DOMAIN_TO-api.thecodeworkers.com >> .env"
+          sh 'echo DATABASE_PORT=3306 >> .env'
+          sh "echo DATABASE_NAME=banana_$DOMAIN_TO >> .env"
+          sh 'echo DATABASE_USERNAME=tcwmysql >> .env'
+          sh "echo DATABASE_PASSWORD=$DATABASE_PASSWORD >> .env"
           script {
             docker.withRegistry(registry, registryCredential ) {
               docker.build("banana-api:$BUILD_NUMBER", '-f Dockerfile.test ./').push()
@@ -48,13 +53,13 @@ pipeline {
       stage('Kubernetes Deploy') {
         when {
           anyOf {
-            expression {env.GIT_BRANCH == 'origin/test'}
-            expression {env.GIT_BRANCH == 'origin/dev'}
+            expression { env.GIT_BRANCH == 'origin/test' }
+            expression { env.GIT_BRANCH == 'origin/dev' }
           }
         }
         steps {
-         sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true delete -f ./scripts/$DEPLOY_TO | true"
-         sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true apply -f ./scripts/$DEPLOY_TO"
+          sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true delete -f ./scripts/$DEPLOY_TO | true"
+          sh "kubectl --token $API_TOKEN --server https://10.96.0.1 --insecure-skip-tls-verify=true apply -f ./scripts/$DEPLOY_TO"
         }
       }
     }

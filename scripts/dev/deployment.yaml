@@ -25,5 +25,5 @@ spec:
             - name: http-port
               containerPort: 1337
           volumeMounts:
-            - name: banana-dev-api
+            - name: banana-dev-api-volume
               mountPath: /app

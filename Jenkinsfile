@@ -36,6 +36,7 @@ pipeline {
         }
         steps {
           sh "echo URL=https://banana-$DOMAIN_TO-api.thecodeworkers.com >> .env"
+          sh 'echo DATABASE_HOST=database.thecodeworkers.com >> .env'
           sh 'echo DATABASE_PORT=3306 >> .env'
           sh "echo DATABASE_NAME=banana_$DOMAIN_TO >> .env"
           sh 'echo DATABASE_USERNAME=tcwmysql >> .env'

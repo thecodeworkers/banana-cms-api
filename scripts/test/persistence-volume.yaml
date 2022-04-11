@@ -1,0 +1,35 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: banana-stg-api-claim
+  namespace: banana
+  labels:
+    app: banana-stg-api
+
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2.8Gi
+
+---
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: banana-stg-api-volume
+  namespace: banana
+  labels:
+    type: local
+    app: banana-stg-api
+
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /mnt/banana-stg-api/

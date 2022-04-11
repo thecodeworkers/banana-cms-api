@@ -24,3 +24,10 @@ spec:
           ports:
             - name: http-port
               containerPort: 1337
+          volumeMounts:
+            - name: banana-stg-api
+              mountPath: /app/public/uploads/
+      volumes:
+        - name: banana-stg-api
+          persistentVolumeClaim:
+            claimName: banana-stg-api-claim

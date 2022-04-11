@@ -17,7 +17,6 @@
     "knex": "0.21.18",
     "mysql": "^2.18.1",
     "react-color": "^2.19.3",
-    "sqlite3": "5.0.0",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",

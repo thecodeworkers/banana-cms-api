@@ -4,6 +4,7 @@ metadata:
   name: banana-dev-api
   namespace: banana
   annotations:
+    kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
     nginx.ingress.kubernetes.io/cors-allow-headers: Authorization, origin, accept, content-type

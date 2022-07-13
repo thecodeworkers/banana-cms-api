@@ -6,13 +6,13 @@ pipeline {
       dockerImage = ''
       API_TOKEN = credentials('kubernetesSecret')
       DATABASE_PASSWORD = credentials('MYSQLPASSWORD')
+      scannerHome = tool 'sonarScanner';
     }
     agent any
 
     stages {
       stage('Sonar Scanner') {
         steps {
-          def scannerHome = tool 'sonarScanner';
           withSonarQubeEnv('Sonarqube TCW') {
             sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=banana-api"
           }

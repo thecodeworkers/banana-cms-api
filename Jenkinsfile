@@ -12,6 +12,7 @@ pipeline {
     stages {
       stage('Sonar Scanner') {
         steps {
+          def scannerHome = tool 'sonarScanner';
           withSonarQubeEnv('Sonarqube TCW') {
             sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=banana-api"
           }

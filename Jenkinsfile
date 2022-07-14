@@ -23,8 +23,8 @@ pipeline {
       }
       stage('Build Test') {
         steps {
-          yarn 'install'
-          yarn 'build'
+          sh 'yarn install'
+          sh 'yarn build'
           sh 'rm -R node_modules'
         }
       }

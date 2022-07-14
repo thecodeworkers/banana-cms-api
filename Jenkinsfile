@@ -6,7 +6,9 @@ pipeline {
       dockerImage = ''
       API_TOKEN = credentials('kubernetesSecret')
       DATABASE_PASSWORD = credentials('MYSQLPASSWORD')
-      scannerHome = tool 'sonarScanner';
+      scannerHome = tool 'sonarScanner'
+      DOMAIN_TO = "${env.GIT_BRANCH == "dev" ? "dev" : "stg"}"
+      DEPLOY_TO = "${env.GIT_BRANCH == "dev" ? "dev" : "test"}"
     }
     agent any
 
@@ -55,8 +57,8 @@ pipeline {
       stage('Kubernetes Deploy') {
         when {
           anyOf {
-            expression { env.GIT_BRANCH == 'origin/test' }
-            expression { env.GIT_BRANCH == 'origin/dev' }
+            expression { env.GIT_BRANCH == 'test' }
+            expression { env.GIT_BRANCH == 'dev' }
           }
         }
         steps {

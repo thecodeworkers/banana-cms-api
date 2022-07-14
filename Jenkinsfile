@@ -13,7 +13,6 @@ pipeline {
     stages {
       stage('Sonar Scanner') {
         steps {
-          sh "${env.GIT_BRANCH}"
           withSonarQubeEnv('Sonarqube TCW') {
             sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=banana-api"
           }
@@ -32,8 +31,8 @@ pipeline {
       stage('Docker Build') {
         when {
           anyOf {
-            expression { env.GIT_BRANCH == 'origin/test' }
-            expression { env.GIT_BRANCH == 'origin/dev' }
+            expression { env.GIT_BRANCH == 'test' }
+            expression { env.GIT_BRANCH == 'dev' }
           }
         }
         steps {

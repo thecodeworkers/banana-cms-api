@@ -13,6 +13,7 @@ pipeline {
     stages {
       stage('Sonar Scanner') {
         steps {
+          sh "${env.GIT_ BRANCH}"
           withSonarQubeEnv('Sonarqube TCW') {
             sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=banana-api"
           }
